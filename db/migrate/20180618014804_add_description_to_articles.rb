@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddDescriptionToArticles < ActiveRecord::Migration
   def change
     add_column :articles, :description, :text
