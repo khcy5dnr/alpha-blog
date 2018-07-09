@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :articles
+  get 'signup', to: 'users#new'
+  post 'users', to: 'users#create'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
